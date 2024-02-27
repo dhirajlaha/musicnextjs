@@ -6,7 +6,7 @@ import { Button } from "./ui/moving-border";
 function HeroSection() {
   return (
     <div
-      className="text-white rounded-md relative h-auto md:h-[40rem] 
+      className="rounded-md relative h-auto md:h-[40rem] 
     flex flex-col justify-center items-center overflow-hidden mx-auto
     w-full py-10 md:py-0"
     >

@@ -2,6 +2,7 @@
 import courseData from "@/data/music_courses.json";
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/background-gradient";
+import CommonCardText from "@/utils/CommonCardText";
 
 interface Course {
   id: number;
@@ -19,15 +20,8 @@ function FeaturedCourses() {
   );
 
   return (
-    <div className="dark:text-white py-12 bg-gray-900">
-      <div className="text-center">
-        <h2 className="text-base text-teal-600 font-semibold uppercase tracking-wide">
-          FEATURED COURSES
-        </h2>
-        <p className="mt-2 text-3xl tracking-tight font-extrabold leading-8 sm:text-4xl">
-          Learn with the best
-        </p>
-      </div>
+    <div className="py-12 bg-gray-900">
+      <CommonCardText Heading="Featured Courses" Para="Learn with the best" />
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
         {featuredCourses.map((course) => (
           <div key={course.id} className="flex justify-center">
