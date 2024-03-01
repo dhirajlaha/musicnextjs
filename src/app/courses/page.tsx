@@ -19,7 +19,7 @@ interface Course {
 function Courses() {
   return (
     <div className="min-h-screen bg-black py-12 pt-36">
-      <h1 className="text-lg md:text-7xl font-bold text-white font-sans text-center mb-8">
+      <h1 className="text-lg md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-neutral-50 to-neutral-400 font-sans text-center mb-8">
         All Courses ({courseData.courses.length})
       </h1>
       <div className="flex flex-wrap justify-center">
