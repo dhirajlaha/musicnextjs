@@ -33,7 +33,12 @@ function FeaturedCourses() {
                 <p className="text-sm text-neutral-600 dark:text-neutral-400 flex-grow">
                   {course.description}
                 </p>
-                <Link href={`/courses/${course.slug}`}>Learn More</Link>
+                <Link
+                  href={`/courses/${course.slug}`}
+                  className="text-black dark:text-neutral-200"
+                >
+                  Learn More
+                </Link>
               </div>
             </BackgroundGradient>
           </div>
